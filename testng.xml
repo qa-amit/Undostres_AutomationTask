@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice">
+	<test name="Test1">
+
+
+		<!-- <parameter name="Username" value="user123@gmail.com"/> <parameter 
+			name="password" value="test@123"/> <parameter name="mobile_number" value="1234567899"/> 
+			<class name="com.qa.Undostres.UsdostresInitiation"/> -->
+
+		<classes>
+			<class name="com.qa.Undostres.TestPages.UndostresVarification" />
+			<class name="com.qa.Undostres.TestPages.RegraCellular" />
+			<class name="com.qa.Undostres.TestPages.Payments" />
+
+
+
+		</classes>
+	</test><!-- Test -->
+</suite><!-- Test -->

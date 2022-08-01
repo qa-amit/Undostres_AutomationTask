@@ -1,0 +1,52 @@
+url=https://prueba.undostres.com.mx/
+PaymentPageURL=https://prueba.undostres.com.mx/payment.php
+Browser_Name=Chrome
+
+*************** Sample Test Data *****************************
+
+CellNum=8465433546
+Operator=Telcel 
+RecargeAmnt=10 dollar
+
+Card_number=4111111111111111
+month=11
+date=25
+cvv=111
+correo_electronico=test@test.com
+
+email=automationUDT1@gmail.com
+password=automationUDT123
+
+*********** Locators of Recarga celular page ******************
+
+Page_Title=UnDosTres - Recargas en l�nea Telcel, Movistar, AT&T, Unefon, Virgin, Bait, TeleV�a, PASE, Boletos de Cine, Pagos CFE
+
+Numero_de_celular1=//input[@name='mobile' and @data-qa='celular-mobile']
+Operador=//input[@name='operator' and @data-qa='celular-operator']
+Monto_de_Recarga=//input[@name='amount' and @data-qa='celular-amount']
+Siguiente=//button[contains(text(),'Siguiente') and @data-qa='celular-pay']
+telcel=//li[@data-id='1' and @data-name='telcel']
+telcel_menulist=//div[@class='suggestion suggestion-ul-container']/ul/li
+ten_dollor=//li[@class='category-suggest operator-plan' and @data-show='$10 (Recarga Saldo)']
+
+
+
+*********** Locators of Payment page ******************
+
+PaymentPageElements=//div[@class='active']
+Tarhet_DD=//div[@class='rotatingGlyContainer']//child::span[@id='cardGly']
+UserNuevaTarjeta=//label[@class='radio-custom-label']//child::a//child::span[text()='Usar nueva tarjeta']
+Card_Num=//input[@id='cardnumberunique']
+Month=//input[@data-qa='mes-input']
+Year=//input[@data-qa='expyear-input']
+CVV=//input[@data-qa='cvv-input']
+emailID=(//div[@class='field form-group']//child::input[@name='txtEmail'])[1]
+PaymentBtn=//button[@name='formsubmit' and @id='paylimit']
+
+
+******* POP UP  Locators *************************
+
+ID=//input[@id='usrname']
+PW=//input[@id='psw']
+NotRobort=//span[@role='checkbox']//child::div[1]
+Accesso=//button[@id='loginBtn']
